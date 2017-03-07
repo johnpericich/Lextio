@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>LexSite Title</title>
+        <!-- Insert Logo Icon -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+        <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> -->
+        <!-- Picturefill
+        <meta name="viewport" content="width=device-width">
+         
+        <script>
+            // Picture element HTML5 shiv
+            document.createElement( "picture" );
+        </script>
+        <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+         -->  
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <section>
+            <div class="siteHeader">
+                <!-- This section gets pushed to the left side-->
+                <div class="siteHeader__section">
+                    <div class="siteHeader__item siteHeaderLogo">
+                    <div class="fa fa-inbox"></div>
+                    </div>
+                    <div class="siteHeader__item siteHeaderButton is-site-header-item-selected">Become a Lex Editor</div>
+                </div>
+                <div class="siteHeader__section" id="siteHeader__middleSection">
+                    <div class="siteHeader__item siteHeaderLogo">
+                    <div class="fa fa-inbox"></div>
+                    </div>
+                    <div class="siteHeader__item siteHeaderButton is-site-header-item-selected">                            
+                        <img src="img/LextioLogoTmp.png" alt="Lextio Logo"
+                        class="logo-img" id="logo-img-main">
+                    </div>
+                </div>
+                <!-- This section gets pushed to the right side-->
+                <div class="siteHeader__section">
+                    <div class="siteHeader__item siteHeaderButton">[Alarm]</div>
+                    <div class="siteHeader__item siteHeaderButton">Dashboard</div>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="down"></i> Profile</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#fill">Invoice</a>
+                            <a href="#fill">Settings</a>
+                            <a href="#fill">Account</a>
+                            <a href="#fill">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+        <section class="main-container">
+            <div class="main-hero-poster">
+                <img src="img/dropbox-hero-poster.png" alt="Hero-Banner" 
+                class="hero-img" id="main-hero-img">
+            </div>
+            <div class="text-size-5">Submit a rough citation to have it bluebooked wihin hours.</div>
+            <form action="to_be_filled">
+                <div class="citation-bar">
+                    <label><textarea type="text" id="citation" placeholder="Enter citation here"></textarea></label>
+                </div>
+            </form>
+            <div class="text-size-3">All submissions are anonymized and encrypted for confidentiality.</div>
+            
+            <!-- Should show up if first time user -->
+            <!-- Trigger/Open The Modal -->
+            <button class="modalBtn" id="myBtn">Instructions Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Submission Instructions</h2>
+                </div>
+                <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                <h3>Instructions Footer</h3>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        
+        <section class="features-container">
+            <article class="content-row">
+                <!-- Company Description & Register -->
+                <div class="content-row-module">
+                    <div class="content-row-wrapper">
+                        <div class="content-row-txt">
+                            <h2>Lextio bluebooks so</br> you can get back to work.</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
+                        </div>
+                    </div>
+                    <div class="content-row-wrapper">    
+                        <div class="content-row-register-form">
+                            <form action="fill_action" class="register-form" id="main-register-form">
+                                <!-- <input type="hidden" name="signup-id"> -->
+                                <input name="fullname" type="text" placeholder="Full name"
+                                class="text-input-full" id="main-register-form-fullname" required>
+                                <input name="email" type="email" placeholder="Email"
+                                class="text-input-half" id="main-register-form-email" required>
+                                <input name="password" type="password" placeholder="Password"
+                                class="text-input-half" id="main-register-form-password" required>
+                                <div class="main-register-form-tos">
+                                    <label><input type="checkbox" id="tos-agree" name="tos-agree" required>
+                                    I agree to <a href="/terms" target="_blank">Lextio's terms</a></label>   
+                                </div>
+                                <button type="submit" class="blue-button signup-button-primary"
+                                id="main-register-form-signup">Sign up</button>
+                            </form>                             
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- Company_Name -->
+                <div class="content-row-module">
+                    <div class="content-row-wrapper">
+                        <div class="content-row-txt">
+                            <h2>What is Lextio?</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="content-row-wrapper">    
+                        <div class="content-row-img">
+                            <img src="img/question.png" alt="Question Mark"
+                            class="module-img" id="module-img-1">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-row">
+                <!-- Security -->
+                <div class="content-row-module">
+                    <div class="content-row-wrapper">                
+                        <div class="content-row-img">
+                            <img src="img/lock.png" alt="Lock" 
+                            class="module-img" id="module-img-2">
+                        </div>
+                    </div>
+                    <div class="content-row-wrapper">
+                        <div class="content-row-txt">
+                            <h2>We Take Security Seriously</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+        </section>
+
+        <section>
+            <article class="final-row">
+                <!-- Final Row Register -->
+                <h3 class="medium-title-desktop">Get started now</h2>
+                <div class="form-container">   
+                    <div class="final-row-register-form">
+                        <form action="fill_action" class="register-form" id="final-register-form">
+                            <!-- <input type="hidden" name="signup-id"> -->
+                            <input name="fullname" type="text" placeholder="Full name"
+                            class="text-input-full" id="final-register-form-fullname">
+                            <input name="email" type="email" placeholder="Email"
+                            class="text-input-full" id="final-register-form-email">
+                            <input name="password" type="password" placeholder="Password"
+                            class="text-input-full" id="final-register-form-password">
+                            <div class="main-register-form-tos">
+                                <label><input type="checkbox" id="final-tos-agree" name="tos-agree" required>
+                                I agree to <a href="/terms" target="_blank">Lextio's terms</a></label>   
+                            </div>
+                            <button type="submit" class="blue-button signup-button-primary"
+                            id="final-register-form-signup">Sign up</button>
+                        </form>                             
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="footer-cols">
+                <div class="footer-company">
+                    <h3>Lextio</h3>
+                        <div class="footer-list">
+                            <a href="/Contact">Contact</a>
+                        </div>
+                        <div class="footer-list">
+                            <a href="">About</a>
+                        </div>
+                </div>
+
+                <div class="footer-jobs">
+                    <h3>Jobs</h3>
+                    <ul> 
+                        <li><a href="">Become a Lex Pro</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-support">
+                    <h3>Support</h3>
+                    <ul> 
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Cookies</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-connect">
+                    <h3>Connect</h3>
+                    <ul> 
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-jobs">
+                    <h3>Products</h3>
+                    <ul> 
+                        <li><a href="">Bluebooking</a></li>
+                        <li><a href="">Upcoming</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    
+    <script src="scripts/main.js"></script> 
+
+    </body>
